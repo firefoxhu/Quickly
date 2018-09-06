@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <com.luseen.luseenbottomnavigation.BottomNavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            app:bnv_active_color="@color/colorOrange"
+            app:bnv_active_text_size="@dimen/bottom_navigation_text_size_active"
+            app:bnv_colored_background="false"
+            app:bnv_inactive_text_size="@dimen/bottom_navigation_text_size_inactive"
+            app:bnv_shadow="true"
+            app:bnv_tablet="false"
+            app:bnv_viewpager_slide="false"
+            app:bnv_with_text="true" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_skip_white" />
+
+        <FrameLayout
+            android:id="@+id/home_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+
+
+
+</RelativeLayout>

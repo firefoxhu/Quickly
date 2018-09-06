@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <android.support.v7.widget.CardView
+        tools:targetApi="lollipop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/recommend_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/recommend_img"
+                android:layout_width="120dp"
+                android:layout_height="80dp"/>
+
+            <TextView
+                android:id="@+id/recommend_title"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/recommend_img"
+                android:ellipsize="end"
+                android:lines="2"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:text="这是放大理解啊的方式发多少发多少分啊的方式范德萨范德萨发多少分发大范德萨发多少分撒地方发多少分多少发多少发多少分打发范德萨发多少分"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/recommend_title"
+                android:layout_toRightOf="@+id/recommend_img"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recommend_origin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="生活百科"
+                    android:textColor="#c8c8c8"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/recommend_views"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="999"
+                    android:textColor="#c8c8c8"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/recommend_zan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="14"
+                    android:textColor="#c8c8c8"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
